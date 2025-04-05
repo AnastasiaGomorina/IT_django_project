@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),  # Включаем маршруты из приложения blog
+    path('pages/', include('pages.urls')),  # Подключение страницы о нас и правил
 ]
